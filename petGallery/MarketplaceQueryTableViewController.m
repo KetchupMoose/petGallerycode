@@ -109,6 +109,8 @@
     PFQuery *query = [PFQuery queryWithClassName:@"petPhoto"];
     
     //later change this to be not equal to and boolean flagged for sale.
+    [query whereKey:@"status" equalTo:@"forSale"];
+    
     [query whereKey:@"creator" notEqualTo:user];
      [query whereKey:@"owner" notEqualTo:user];
     [query includeKey:@"petObject"];
@@ -116,7 +118,7 @@
     
     //add code to also include the pet ratings
     
-    [query includeKey:@"creator"];
+ 
         //need method to call to reload table
     return query;
 }

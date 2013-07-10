@@ -558,6 +558,135 @@
             </objects>
             <point key="canvasLocation" x="1238" y="2315"/>
         </scene>
+        <!--My Pets Query Table View Controller-->
+        <scene sceneID="gGa-VR-fia">
+            <objects>
+                <tableViewController id="INg-Zt-j0v" customClass="MyPetsQueryTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" id="vO7-G2-92t" customClass="MyPetsQueryTableViewContoller">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyPetsCell" rowHeight="85" id="vJu-Vn-QZh">
+                                <rect key="frame" x="0.0" y="22" width="320" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPR-hv-uh1" customClass="PFImageView">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="114" id="z09-X5-cfs"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv1-ea-RLx">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="UPR-hv-uh1" firstAttribute="top" secondItem="vJu-Vn-QZh" secondAttribute="top" type="default" id="0KW-8l-qj0"/>
+                                    <constraint firstItem="UPR-hv-uh1" firstAttribute="leading" secondItem="vJu-Vn-QZh" secondAttribute="leading" type="default" id="Am2-PM-CyX"/>
+                                    <constraint firstItem="UPR-hv-uh1" firstAttribute="centerY" secondItem="vJu-Vn-QZh" secondAttribute="centerY" type="default" id="bDY-j7-pa1"/>
+                                    <constraint firstItem="lv1-ea-RLx" firstAttribute="top" secondItem="vJu-Vn-QZh" secondAttribute="top" constant="31" id="bH4-1W-wqO"/>
+                                    <constraint firstAttribute="trailing" secondItem="lv1-ea-RLx" secondAttribute="trailing" constant="106" id="oeN-NG-cKP"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="i21-YD-gwK" kind="modal" identifier="MyPetDetails" id="A6U-qz-UXc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="INg-Zt-j0v" id="qKp-v6-pKr"/>
+                            <outlet property="delegate" destination="INg-Zt-j0v" id="hZZ-ss-P87"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yKN-wV-dVf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7J-Xn-LtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270" y="3074"/>
+        </scene>
+        <!--My Pet Details View Controller-->
+        <scene sceneID="HAZ-wX-oE6">
+            <objects>
+                <viewController id="BPc-8d-jOv" customClass="MyPetDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0LA-tK-jeu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wR-Gv-54w" customClass="PFImageView">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="YwL-nU-QVo"/>
+                                    <constraint firstAttribute="height" constant="261" id="oE8-tj-v5A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwf-bq-QdB">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwY-54-NSC">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Set For Sale">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PetSaleButton:" destination="BPc-8d-jOv" eventType="touchUpInside" id="CDw-pA-L87"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0t-sz-5LC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HHx-VK-qIo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="qcX-k2-Xbi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zwf-bq-QdB" firstAttribute="leading" secondItem="0LA-tK-jeu" secondAttribute="leading" constant="36" id="1mn-lo-Wgd"/>
+                            <constraint firstItem="PwY-54-NSC" firstAttribute="leading" secondItem="0LA-tK-jeu" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="C1a-ZK-32q"/>
+                            <constraint firstItem="HHx-VK-qIo" firstAttribute="baseline" secondItem="PwY-54-NSC" secondAttribute="baseline" type="default" id="GTm-wp-xvX"/>
+                            <constraint firstItem="V0t-sz-5LC" firstAttribute="baseline" secondItem="Zwf-bq-QdB" secondAttribute="baseline" type="default" id="Iev-d1-znz"/>
+                            <constraint firstAttribute="bottom" secondItem="PwY-54-NSC" secondAttribute="bottom" constant="27" id="KfC-Lk-UtM"/>
+                            <constraint firstAttribute="bottom" secondItem="Zwf-bq-QdB" secondAttribute="bottom" constant="91" id="cNW-Ss-w3h"/>
+                            <constraint firstAttribute="trailing" secondItem="V0t-sz-5LC" secondAttribute="trailing" constant="74" id="dDw-Tw-uKy"/>
+                            <constraint firstItem="HHx-VK-qIo" firstAttribute="trailing" secondItem="6wR-Gv-54w" secondAttribute="trailing" type="default" id="kZh-Lb-1Pg"/>
+                            <constraint firstItem="6wR-Gv-54w" firstAttribute="leading" secondItem="0LA-tK-jeu" secondAttribute="leading" constant="26" id="sTx-mW-b6Q"/>
+                            <constraint firstItem="6wR-Gv-54w" firstAttribute="top" secondItem="0LA-tK-jeu" secondAttribute="top" constant="11" id="tBO-Vz-COd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8it-df-L9L">
+                        <barButtonItem key="leftBarButtonItem" title="My Pets" id="uZ3-g7-VZ6">
+                            <connections>
+                                <action selector="BackToMyPetsButton:" destination="BPc-8d-jOv" id="SZB-de-rPu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="BackToMyPetsButton" destination="uZ3-g7-VZ6" id="pxO-mu-twW"/>
+                        <outlet property="PetDetailsImageView" destination="6wR-Gv-54w" id="XDK-np-53u"/>
+                        <outlet property="PetNameLabel" destination="Zwf-bq-QdB" id="HDY-Vv-12q"/>
+                        <outlet property="PriceTextField" destination="HHx-VK-qIo" id="MNC-hH-LM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OtC-Eb-cxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2586" y="3116"/>
+        </scene>
         <!--Main Load Tab Bar Controller - MainStarterView-->
         <scene sceneID="yHT-a2-DMd">
             <objects>
@@ -574,11 +703,12 @@
                         <segue destination="IJd-Hk-1oh" kind="relationship" relationship="viewControllers" id="vVb-j6-ODh"/>
                         <segue destination="9NK-tn-IgD" kind="relationship" relationship="viewControllers" id="zTi-hT-xqN"/>
                         <segue destination="7OS-rd-5yb" kind="relationship" relationship="viewControllers" id="0Vb-fh-qAT"/>
+                        <segue destination="y5v-mL-4t0" kind="relationship" relationship="viewControllers" id="8dW-dX-cxE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6Z-lQ-JOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="-90"/>
+            <point key="canvasLocation" x="-435" y="558"/>
         </scene>
         <!--Navigation Controller - PetAdd-->
         <scene sceneID="NgC-4M-mQK">
@@ -674,7 +804,145 @@
             </objects>
             <point key="canvasLocation" x="604" y="2331"/>
         </scene>
+        <!--Navigation Controller - MyPets-->
+        <scene sceneID="wX6-Oa-b6G">
+            <objects>
+                <navigationController id="y5v-mL-4t0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MyPets" id="Pqb-TQ-YdZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0qk-aR-oWg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="INg-Zt-j0v" kind="relationship" relationship="rootViewController" id="ORg-cH-IKK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Cr-Iy-6Pd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="3080"/>
+        </scene>
+        <!--My Pet Details Nav View Controller-->
+        <scene sceneID="uoo-Bj-p1Q">
+            <objects>
+                <navigationController id="i21-YD-gwK" customClass="MyPetDetailsNavViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="LeK-5Q-uRd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9cr-F3-fgN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BPc-8d-jOv" kind="relationship" relationship="rootViewController" id="FPa-Od-Q90"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ltb-wG-nqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008" y="3104"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="AddPetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddPetViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="petAdd:"/>
+                <relationship kind="action" name="setPetImage:"/>
+                <relationship kind="outlet" name="PetName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="PetType" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="imageButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="BuyPetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BuyPetViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="BackToMarketNavigate:"/>
+                <relationship kind="action" name="BuyPetButton:"/>
+                <relationship kind="outlet" name="BuyPetImage" candidateClass="PFImageView"/>
+                <relationship kind="outlet" name="BuyPetNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="BuyPetRatingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="BuyPetTypeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MainLoadTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainLoadTabBarController.h"/>
+            <relationships>
+                <relationship kind="action" name="logOutButtonTapAction:"/>
+            </relationships>
+        </class>
+        <class className="MarketplaceQueryTableViewController" superclassName="PFQueryTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MarketplaceQueryTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="refreshbutton:"/>
+            </relationships>
+        </class>
+        <class className="MyPetDetailsNavViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyPetDetailsNavViewController.h"/>
+        </class>
+        <class className="MyPetDetailsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyPetDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="BackToMyPetsButton:"/>
+                <relationship kind="action" name="PetSaleButton:"/>
+                <relationship kind="outlet" name="BackToMyPetsButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="PetDetailsImageView" candidateClass="PFImageView"/>
+                <relationship kind="outlet" name="PetNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PriceTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MyPetsQueryTableViewController" superclassName="PFQueryTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyPetsQueryTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="refreshbutton:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PFImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFImageView.h"/>
+        </class>
+        <class className="PFQueryTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFQueryTableViewController.h"/>
+        </class>
+        <class className="PFTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PFTableViewCell.h"/>
+        </class>
+        <class className="PetPhotoDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PetPhotoDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="PetPhotoImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="PetPhotoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PetPhotoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cameraButtonTapped:"/>
+                <relationship kind="action" name="refresh:"/>
+                <relationship kind="outlet" name="photoScrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="PetRatingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PetRatingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="PetRatingSliderPick:" candidateClass="UISlider"/>
+                <relationship kind="action" name="SendRatingButton:"/>
+                <relationship kind="outlet" name="PetRatingImageView" candidateClass="PFImageView"/>
+                <relationship kind="outlet" name="PetRatingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="PetRatingSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="PlayerProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayerProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="profileGoldLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profileLevelLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profileUsername" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

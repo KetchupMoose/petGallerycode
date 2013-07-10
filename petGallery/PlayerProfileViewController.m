@@ -23,18 +23,27 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self getProfileInfo];
     
+    
+    
+    
+    
+    
+    
+}
+
+- (void)getProfileInfo {
     // load the current user's profile from a query
     PFUser *user = [PFUser currentUser];
-    PFQuery *query = [PFQuery queryWithClassName:@"User"];
+    PFQuery *query = [PFQuery queryWithClassName:@"UserProfile"];
+    [query whereKey:@"user" equalTo:user];
+     NSLog(@"Username: %@", user.objectId);
     
-    [query whereKey:@"objectId" equalTo:user];
     
-    query.limit = [NSNumber numberWithInt:1];
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded. The first 100 objects are available in objects
@@ -45,11 +54,18 @@
             
             for (PFObject *userdata in objects)
             {
-                self.profileUsername.text = [userdata objectForKey:@"username"];
+                self.profileUsername.text = [userdata objectForKey:@"Username"];
+                NSNumber *goldnumber = [userdata objectForKey:@"Currency"];
+                NSString *GoldString = [NSString stringWithFormat:@"%@", goldnumber];
+                
+                self.profileGoldLabel.text = GoldString;
                 
                 
-                 self.profileUsername.text = [userdata objectForKey:@"username"];
-                 self.profileUsername.text = [userdata objectForKey:@"username"];
+                NSNumber *levelnumber = [userdata objectForKey:@"Level"];
+                NSString *LevelString = [NSString stringWithFormat:@"%@", levelnumber];
+                
+                  self.profileLevelLabel.text = LevelString;
+                
                 
             }
             
@@ -59,6 +75,17 @@
         }
     }];
 
+    
+    
+    
+}   
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+    
+   
     
     
     

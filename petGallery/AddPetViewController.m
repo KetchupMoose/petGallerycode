@@ -21,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self setFirstProfileInfo];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +40,55 @@
     
     
     return YES;
-   } 
+   }
+
+- (void)setFirstProfileInfo {
+    // check if the user has advanced profile stats, if not create them for the current user for the first time
+    //move this function to the first nib the user sees after login for the future...
+    
+    //check if they have a row in the player stats table...
+    PFUser *user = [PFUser currentUser];
+    PFQuery *query = [PFQuery queryWithClassName:@"UserProfile"];
+    [query whereKey:@"user" equalTo:user];
+    NSLog(@"Username: %@", user.objectId);
+    
+    
+    
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        if (!object) {
+            NSLog(@"need to create a profile");
+            //create first profile now
+             PFUser *user = [PFUser currentUser];
+            NSString *username = user.username;
+            NSNumber *level = [NSNumber numberWithInt:1];
+            NSNumber *currency = [NSNumber numberWithFloat:0];
+            NSNumber *xp = [NSNumber numberWithFloat:0];
+            
+            PFObject *profileObject = [PFObject objectWithClassName:@"UserProfile"];
+            [profileObject setObject:username forKey:@"Username"];
+            [profileObject setObject:level forKey:@"Level"];
+            [profileObject setObject:currency forKey:@"Currency"];
+            [profileObject setObject:xp forKey:@"XP"];
+            [profileObject setObject:user forKey:@"user"];
+            
+        [profileObject saveInBackground];
+            
+        } else {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved the object.");
+            
+            
+        }    }];
+    
+    
+    
+    
+}
+
+
+
+
+
     
 - (IBAction)petAdd:(id)sender
 {
