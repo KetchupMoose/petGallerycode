@@ -62,7 +62,6 @@
 		04A9A10E1785CCD900976926 /* PetRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A10D1785CCD800976926 /* PetRatingViewController.m */; };
 		04B7656E177E04AF00B6C1B0 /* MarketplaceQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7656D177E04AF00B6C1B0 /* MarketplaceQueryTableViewController.m */; };
 		04EEBE33178C034B00161417 /* PlayerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBE32178C034B00161417 /* PlayerProfileViewController.m */; };
-<<<<<<< HEAD
 		8C29F80B17D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F7F817D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m */; };
 		8C29F80C17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F7FA17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m */; };
 		8C29F80D17D5110700EA8F38 /* FrontPageSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F7FC17D5110700EA8F38 /* FrontPageSelectionViewController.m */; };
@@ -73,12 +72,6 @@
 		8C29F81217D5110700EA8F38 /* MyPetsQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80617D5110700EA8F38 /* MyPetsQueryTableViewController.m */; };
 		8C29F81317D5110700EA8F38 /* PlayerBadgesUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80817D5110700EA8F38 /* PlayerBadgesUITableViewController.m */; };
 		8C29F81417D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80A17D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m */; };
-=======
-		F2E79A5017E49F2E0036BBF6 /* FrontPageNewPFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E79A4F17E49F2E0036BBF6 /* FrontPageNewPFQueryTableViewController.m */; };
-		F2E79A5817E49F4A0036BBF6 /* FrontPagePFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E79A5317E49F4A0036BBF6 /* FrontPagePFQueryTableViewController.m */; };
-		F2E79A5917E49F4A0036BBF6 /* FrontPageSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E79A5517E49F4A0036BBF6 /* FrontPageSelectionViewController.m */; };
-		F2E79A5A17E49F4A0036BBF6 /* FrontPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E79A5717E49F4A0036BBF6 /* FrontPageViewController.m */; };
->>>>>>> 5f3639d6c48d82cb2a0526b3ec6491c3e9c8b035
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,7 +147,6 @@
 		04B7656D177E04AF00B6C1B0 /* MarketplaceQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketplaceQueryTableViewController.m; sourceTree = "<group>"; };
 		04EEBE31178C034B00161417 /* PlayerProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerProfileViewController.h; sourceTree = "<group>"; };
 		04EEBE32178C034B00161417 /* PlayerProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerProfileViewController.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		8C29F7F717D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageNewPFQueryTableViewController.h; sourceTree = "<group>"; };
 		8C29F7F817D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageNewPFQueryTableViewController.m; sourceTree = "<group>"; };
 		8C29F7F917D5110700EA8F38 /* FrontPagePFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPagePFQueryTableViewController.h; sourceTree = "<group>"; };
@@ -175,16 +167,6 @@
 		8C29F80817D5110700EA8F38 /* PlayerBadgesUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerBadgesUITableViewController.m; path = petGallery/PlayerBadgesUITableViewController.m; sourceTree = "<group>"; };
 		8C29F80917D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopRatedPetsPFQueryTableViewController.h; path = petGallery/TopRatedPetsPFQueryTableViewController.h; sourceTree = "<group>"; };
 		8C29F80A17D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopRatedPetsPFQueryTableViewController.m; path = petGallery/TopRatedPetsPFQueryTableViewController.m; sourceTree = "<group>"; };
-=======
-		F2E79A4F17E49F2E0036BBF6 /* FrontPageNewPFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageNewPFQueryTableViewController.m; sourceTree = "<group>"; };
-		F2E79A5117E49F4A0036BBF6 /* FrontPageNewPFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageNewPFQueryTableViewController.h; sourceTree = "<group>"; };
-		F2E79A5217E49F4A0036BBF6 /* FrontPagePFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPagePFQueryTableViewController.h; sourceTree = "<group>"; };
-		F2E79A5317E49F4A0036BBF6 /* FrontPagePFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPagePFQueryTableViewController.m; sourceTree = "<group>"; };
-		F2E79A5417E49F4A0036BBF6 /* FrontPageSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageSelectionViewController.h; sourceTree = "<group>"; };
-		F2E79A5517E49F4A0036BBF6 /* FrontPageSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageSelectionViewController.m; sourceTree = "<group>"; };
-		F2E79A5617E49F4A0036BBF6 /* FrontPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageViewController.h; sourceTree = "<group>"; };
-		F2E79A5717E49F4A0036BBF6 /* FrontPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageViewController.m; sourceTree = "<group>"; };
->>>>>>> 5f3639d6c48d82cb2a0526b3ec6491c3e9c8b035
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,12 +265,8 @@
 		045519EF176FB70500E1DCF8 /* petGallery */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				8C29F81617D5115800EA8F38 /* My Pets */,
 				8C29F81517D5111600EA8F38 /* frontpage */,
-=======
-				F2E79A4E17E49ED60036BBF6 /* FrontPage */,
->>>>>>> 5f3639d6c48d82cb2a0526b3ec6491c3e9c8b035
 				040DB553177258B600320033 /* MBProgressHUD.h */,
 				040DB554177258B600320033 /* MBProgressHUD.m */,
 				045519F8176FB70500E1DCF8 /* AppDelegate.h */,
@@ -341,7 +319,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		8C29F81517D5111600EA8F38 /* frontpage */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,21 +345,6 @@
 				8C29F80617D5110700EA8F38 /* MyPetsQueryTableViewController.m */,
 			);
 			name = "My Pets";
-=======
-		F2E79A4E17E49ED60036BBF6 /* FrontPage */ = {
-			isa = PBXGroup;
-			children = (
-				F2E79A5117E49F4A0036BBF6 /* FrontPageNewPFQueryTableViewController.h */,
-				F2E79A5217E49F4A0036BBF6 /* FrontPagePFQueryTableViewController.h */,
-				F2E79A5317E49F4A0036BBF6 /* FrontPagePFQueryTableViewController.m */,
-				F2E79A5417E49F4A0036BBF6 /* FrontPageSelectionViewController.h */,
-				F2E79A5517E49F4A0036BBF6 /* FrontPageSelectionViewController.m */,
-				F2E79A5617E49F4A0036BBF6 /* FrontPageViewController.h */,
-				F2E79A5717E49F4A0036BBF6 /* FrontPageViewController.m */,
-				F2E79A4F17E49F2E0036BBF6 /* FrontPageNewPFQueryTableViewController.m */,
-			);
-			name = FrontPage;
->>>>>>> 5f3639d6c48d82cb2a0526b3ec6491c3e9c8b035
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,7 +450,6 @@
 				04062E94178471C800BC185B /* BuyPetViewController.m in Sources */,
 				04A9A10E1785CCD900976926 /* PetRatingViewController.m in Sources */,
 				04EEBE33178C034B00161417 /* PlayerProfileViewController.m in Sources */,
-<<<<<<< HEAD
 				8C29F80B17D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m in Sources */,
 				8C29F80C17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m in Sources */,
 				8C29F80D17D5110700EA8F38 /* FrontPageSelectionViewController.m in Sources */,
@@ -499,12 +460,6 @@
 				8C29F81217D5110700EA8F38 /* MyPetsQueryTableViewController.m in Sources */,
 				8C29F81317D5110700EA8F38 /* PlayerBadgesUITableViewController.m in Sources */,
 				8C29F81417D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m in Sources */,
-=======
-				F2E79A5017E49F2E0036BBF6 /* FrontPageNewPFQueryTableViewController.m in Sources */,
-				F2E79A5817E49F4A0036BBF6 /* FrontPagePFQueryTableViewController.m in Sources */,
-				F2E79A5917E49F4A0036BBF6 /* FrontPageSelectionViewController.m in Sources */,
-				F2E79A5A17E49F4A0036BBF6 /* FrontPageViewController.m in Sources */,
->>>>>>> 5f3639d6c48d82cb2a0526b3ec6491c3e9c8b035
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,9 +551,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "petGallery/petGallery-Prefix.pch";
 				INFOPLIST_FILE = "petGallery/petGallery-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -613,9 +566,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "petGallery/petGallery-Prefix.pch";
 				INFOPLIST_FILE = "petGallery/petGallery-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
