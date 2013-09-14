@@ -12,6 +12,9 @@
 #import "MarketplaceQueryTableViewController.h"
 //only importing this to try sharing data with it
 #import "MarketplaceTableViewController.h"
+
+
+
 @implementation AppDelegate
 {
     NSMutableArray *pets;

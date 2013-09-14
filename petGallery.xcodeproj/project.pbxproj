@@ -62,6 +62,16 @@
 		04A9A10E1785CCD900976926 /* PetRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9A10D1785CCD800976926 /* PetRatingViewController.m */; };
 		04B7656E177E04AF00B6C1B0 /* MarketplaceQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7656D177E04AF00B6C1B0 /* MarketplaceQueryTableViewController.m */; };
 		04EEBE33178C034B00161417 /* PlayerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EEBE32178C034B00161417 /* PlayerProfileViewController.m */; };
+		8C29F80B17D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F7F817D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m */; };
+		8C29F80C17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F7FA17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m */; };
+		8C29F80D17D5110700EA8F38 /* FrontPageSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F7FC17D5110700EA8F38 /* FrontPageSelectionViewController.m */; };
+		8C29F80E17D5110700EA8F38 /* FrontPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F7FE17D5110700EA8F38 /* FrontPageViewController.m */; };
+		8C29F80F17D5110700EA8F38 /* FullImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80017D5110700EA8F38 /* FullImageViewController.m */; };
+		8C29F81017D5110700EA8F38 /* MyPetDetailsNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80217D5110700EA8F38 /* MyPetDetailsNavViewController.m */; };
+		8C29F81117D5110700EA8F38 /* MyPetDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80417D5110700EA8F38 /* MyPetDetailsViewController.m */; };
+		8C29F81217D5110700EA8F38 /* MyPetsQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80617D5110700EA8F38 /* MyPetsQueryTableViewController.m */; };
+		8C29F81317D5110700EA8F38 /* PlayerBadgesUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80817D5110700EA8F38 /* PlayerBadgesUITableViewController.m */; };
+		8C29F81417D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F80A17D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +147,26 @@
 		04B7656D177E04AF00B6C1B0 /* MarketplaceQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketplaceQueryTableViewController.m; sourceTree = "<group>"; };
 		04EEBE31178C034B00161417 /* PlayerProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerProfileViewController.h; sourceTree = "<group>"; };
 		04EEBE32178C034B00161417 /* PlayerProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerProfileViewController.m; sourceTree = "<group>"; };
+		8C29F7F717D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageNewPFQueryTableViewController.h; sourceTree = "<group>"; };
+		8C29F7F817D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageNewPFQueryTableViewController.m; sourceTree = "<group>"; };
+		8C29F7F917D5110700EA8F38 /* FrontPagePFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPagePFQueryTableViewController.h; sourceTree = "<group>"; };
+		8C29F7FA17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPagePFQueryTableViewController.m; sourceTree = "<group>"; };
+		8C29F7FB17D5110700EA8F38 /* FrontPageSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageSelectionViewController.h; sourceTree = "<group>"; };
+		8C29F7FC17D5110700EA8F38 /* FrontPageSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageSelectionViewController.m; sourceTree = "<group>"; };
+		8C29F7FD17D5110700EA8F38 /* FrontPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontPageViewController.h; sourceTree = "<group>"; };
+		8C29F7FE17D5110700EA8F38 /* FrontPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontPageViewController.m; sourceTree = "<group>"; };
+		8C29F7FF17D5110700EA8F38 /* FullImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FullImageViewController.h; path = petGallery/FullImageViewController.h; sourceTree = "<group>"; };
+		8C29F80017D5110700EA8F38 /* FullImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FullImageViewController.m; path = petGallery/FullImageViewController.m; sourceTree = "<group>"; };
+		8C29F80117D5110700EA8F38 /* MyPetDetailsNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPetDetailsNavViewController.h; sourceTree = "<group>"; };
+		8C29F80217D5110700EA8F38 /* MyPetDetailsNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPetDetailsNavViewController.m; sourceTree = "<group>"; };
+		8C29F80317D5110700EA8F38 /* MyPetDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPetDetailsViewController.h; sourceTree = "<group>"; };
+		8C29F80417D5110700EA8F38 /* MyPetDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPetDetailsViewController.m; sourceTree = "<group>"; };
+		8C29F80517D5110700EA8F38 /* MyPetsQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPetsQueryTableViewController.h; sourceTree = "<group>"; };
+		8C29F80617D5110700EA8F38 /* MyPetsQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPetsQueryTableViewController.m; sourceTree = "<group>"; };
+		8C29F80717D5110700EA8F38 /* PlayerBadgesUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerBadgesUITableViewController.h; path = petGallery/PlayerBadgesUITableViewController.h; sourceTree = "<group>"; };
+		8C29F80817D5110700EA8F38 /* PlayerBadgesUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerBadgesUITableViewController.m; path = petGallery/PlayerBadgesUITableViewController.m; sourceTree = "<group>"; };
+		8C29F80917D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopRatedPetsPFQueryTableViewController.h; path = petGallery/TopRatedPetsPFQueryTableViewController.h; sourceTree = "<group>"; };
+		8C29F80A17D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopRatedPetsPFQueryTableViewController.m; path = petGallery/TopRatedPetsPFQueryTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +220,12 @@
 		045519DD176FB70400E1DCF8 = {
 			isa = PBXGroup;
 			children = (
+				8C29F7FF17D5110700EA8F38 /* FullImageViewController.h */,
+				8C29F80017D5110700EA8F38 /* FullImageViewController.m */,
+				8C29F80717D5110700EA8F38 /* PlayerBadgesUITableViewController.h */,
+				8C29F80817D5110700EA8F38 /* PlayerBadgesUITableViewController.m */,
+				8C29F80917D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.h */,
+				8C29F80A17D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m */,
 				04062E6C1784697D00BC185B /* Assets */,
 				045519EF176FB70500E1DCF8 /* petGallery */,
 				045519E8176FB70500E1DCF8 /* Frameworks */,
@@ -229,6 +265,8 @@
 		045519EF176FB70500E1DCF8 /* petGallery */ = {
 			isa = PBXGroup;
 			children = (
+				8C29F81617D5115800EA8F38 /* My Pets */,
+				8C29F81517D5111600EA8F38 /* frontpage */,
 				040DB553177258B600320033 /* MBProgressHUD.h */,
 				040DB554177258B600320033 /* MBProgressHUD.m */,
 				045519F8176FB70500E1DCF8 /* AppDelegate.h */,
@@ -279,6 +317,34 @@
 				045519FF176FB70500E1DCF8 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C29F81517D5111600EA8F38 /* frontpage */ = {
+			isa = PBXGroup;
+			children = (
+				8C29F7FB17D5110700EA8F38 /* FrontPageSelectionViewController.h */,
+				8C29F7FC17D5110700EA8F38 /* FrontPageSelectionViewController.m */,
+				8C29F7FD17D5110700EA8F38 /* FrontPageViewController.h */,
+				8C29F7FE17D5110700EA8F38 /* FrontPageViewController.m */,
+				8C29F7F917D5110700EA8F38 /* FrontPagePFQueryTableViewController.h */,
+				8C29F7FA17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m */,
+				8C29F7F817D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m */,
+				8C29F7F717D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.h */,
+			);
+			name = frontpage;
+			sourceTree = "<group>";
+		};
+		8C29F81617D5115800EA8F38 /* My Pets */ = {
+			isa = PBXGroup;
+			children = (
+				8C29F80117D5110700EA8F38 /* MyPetDetailsNavViewController.h */,
+				8C29F80217D5110700EA8F38 /* MyPetDetailsNavViewController.m */,
+				8C29F80317D5110700EA8F38 /* MyPetDetailsViewController.h */,
+				8C29F80417D5110700EA8F38 /* MyPetDetailsViewController.m */,
+				8C29F80517D5110700EA8F38 /* MyPetsQueryTableViewController.h */,
+				8C29F80617D5110700EA8F38 /* MyPetsQueryTableViewController.m */,
+			);
+			name = "My Pets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +450,16 @@
 				04062E94178471C800BC185B /* BuyPetViewController.m in Sources */,
 				04A9A10E1785CCD900976926 /* PetRatingViewController.m in Sources */,
 				04EEBE33178C034B00161417 /* PlayerProfileViewController.m in Sources */,
+				8C29F80B17D5110700EA8F38 /* FrontPageNewPFQueryTableViewController.m in Sources */,
+				8C29F80C17D5110700EA8F38 /* FrontPagePFQueryTableViewController.m in Sources */,
+				8C29F80D17D5110700EA8F38 /* FrontPageSelectionViewController.m in Sources */,
+				8C29F80E17D5110700EA8F38 /* FrontPageViewController.m in Sources */,
+				8C29F80F17D5110700EA8F38 /* FullImageViewController.m in Sources */,
+				8C29F81017D5110700EA8F38 /* MyPetDetailsNavViewController.m in Sources */,
+				8C29F81117D5110700EA8F38 /* MyPetDetailsViewController.m in Sources */,
+				8C29F81217D5110700EA8F38 /* MyPetsQueryTableViewController.m in Sources */,
+				8C29F81317D5110700EA8F38 /* PlayerBadgesUITableViewController.m in Sources */,
+				8C29F81417D5110700EA8F38 /* TopRatedPetsPFQueryTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

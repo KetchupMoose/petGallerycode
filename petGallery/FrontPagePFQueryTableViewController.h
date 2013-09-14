@@ -8,6 +8,9 @@
 
 #import <Parse/Parse.h>
 
+
+
 @interface FrontPagePFQueryTableViewController : PFQueryTableViewController
+@property (nonatomic, retain) PFQuery *frontPageQuery;
 
 @end
